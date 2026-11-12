@@ -390,3 +390,21 @@ footer::before { content: ''; display: block; height: 14px; background: var(--ha
 .tx .plate:empty { display: none; }
 .aisle .sign small { font-size: .7rem; }
 .pc .brand, .pc .flag { font-size: .76rem; }
+
+/* ================= video + motion upgrade ================= */
+.hero .bg video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero .bg { transform: translateY(calc(var(--p, 0) * 18vh)) scale(calc(1 + var(--p, 0) * .06)); will-change: transform; }
+.hero .wrap { opacity: calc(1 - var(--p, 0) * 1.3); }
+video.bgv { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; background: #000; }
+.slam span { display: block; animation: slam .75s cubic-bezier(.2,1.4,.4,1) both; }
+.slam span:nth-child(2) { animation-delay: .22s; }
+.intro-on .slam span { animation-play-state: paused; }
+@keyframes slam { 0% { opacity: 0; transform: translateY(-38%) scale(1.25); } 60% { opacity: 1; } 100% { transform: none; } }
+.aticker { background: var(--yellow); color: var(--ink); overflow: hidden; border-block: 3px solid var(--ink); }
+.aticker .track { display: flex; align-items: center; width: max-content; animation: tick 36s linear infinite; }
+.aticker span { font: 900 clamp(1.5rem, 3vw, 2.4rem)/1 var(--disp); text-transform: uppercase; padding: 14px 18px; white-space: nowrap; }
+.aticker i { width: 34px; height: 14px; background: linear-gradient(-45deg, var(--ink) 25%, transparent 25% 50%, var(--ink) 50% 75%, transparent 75%) 0 0 / 14px 14px; }
+@keyframes tick { to { transform: translateX(-50%); } }
+.tip .lbl, .tip .play, .tip b, .tip span { position: relative; z-index: 1; }
+.tip .lbl, .tip .play { position: absolute; }
+@media (prefers-reduced-motion: reduce) { .hero .bg { transform: none !important; } .aticker .track { animation: none; } }

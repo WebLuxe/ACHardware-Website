@@ -34,11 +34,11 @@
 
 <main>
   <section class="hero">
-    <div class="bg"><picture><source media="(max-width: 700px)" srcset="img/wall-m.webp"><img src="img/wall.webp" alt="A wall of tools in the shop" fetchpriority="high"></picture></div>
+    <div class="bg"><picture><source media="(max-width: 700px)" srcset="img/wall-m.webp"><img src="img/wall.webp" alt="A wall of tools in the shop" fetchpriority="high"></picture><video data-src="video/hero.mp4" data-src-tall="video/hero-tall.mp4" aria-hidden="true"></video></div>
     <div class="wrap">
       <div>
         <p class="tag" style="color:var(--yellow)">TOTAL tools dealer · Mauritius</p>
-        <h1><span>Every tool.</span><span class="g">One stop.</span></h1>
+        <h1 class="slam"><span>Every tool.</span><span class="g">One stop.</span></h1>
         <p class="lead">Power tools, hand tools, garden, plumbing and electrical. In stock, on the shelf, with someone at the counter who knows how to use them.</p>
         <form class="bigsearch" action="shop.html" role="search">
           <label for="hq" class="sr">Search tools</label>
@@ -54,6 +54,8 @@
       </div>
     </div>
   </section>
+
+  <div class="aticker" aria-hidden="true"><div class="track"><span>Power tools</span><i></i><span>Hand tools</span><i></i><span>Garden</span><i></i><span>Plumbing</span><i></i><span>Electrical</span><i></i><span>Paint & decor</span><i></i><span>Safety gear</span><i></i><span>Screws & fixings</span><i></i></div></div>
 
   <section class="pad">
     <div class="wrap">
@@ -91,11 +93,11 @@
     <div class="wrap">
       <div class="head"><div><p class="tag">La minute Total</p><h2>Tool tips<br>in 60 seconds</h2></div><a class="btn" data-tt data-i="tt">Follow on TikTok</a></div>
       <div class="tips">
-        <a class="tip rv" data-tt><img src="img/p-drill.webp" alt="" loading="lazy" decoding="async"><span class="lbl">La minute Total</span><span class="play"></span><b>Which drill bit for concrete?</b><span>Wood, metal or masonry, explained.</span></a>
-        <a class="tip rv d1" data-tt><img src="img/p-grinder.webp" alt="" loading="lazy" decoding="async"><span class="lbl">La minute Total</span><span class="play"></span><b>Change a grinder disc safely</b><span>The right way, in under a minute.</span></a>
-        <a class="tip rv d2" data-tt><img src="img/p-hand-tools.webp" alt="" loading="lazy" decoding="async"><span class="lbl">La minute Total</span><span class="play"></span><b>Your first toolbox</b><span>The 6 tools every home needs.</span></a>
+        <a class="tip rv" data-tt><video class="bgv" data-src="video/drill.mp4" poster="video/drill.webp" aria-hidden="true"></video><span class="lbl">La minute Total</span><span class="play"></span><b>Which drill bit for concrete?</b><span>Wood, metal or masonry, explained.</span></a>
+        <a class="tip rv d1" data-tt><video class="bgv" data-src="video/weld.mp4" poster="video/weld.webp" aria-hidden="true"></video><span class="lbl">La minute Total</span><span class="play"></span><b>Welding: gear up first</b><span>Mask, gloves and the right rods.</span></a>
+        <a class="tip rv d2" data-tt><video class="bgv" data-src="video/screws.mp4" poster="video/screws.webp" aria-hidden="true"></video><span class="lbl">La minute Total</span><span class="play"></span><b>Pilot holes, no split wood</b><span>Which bit for which screw.</span></a>
       </div>
-      <p class="note" data-demo>Example video covers. They link to the shop's TikTok.</p>
+      <p class="note" data-demo>Stock clips for this demo. Each card opens the shop's TikTok.</p>
     </div>
   </section>
 
@@ -117,5 +119,6 @@
 <footer id="foot"></footer>
 <script src="config.js" defer></script>
 <script src="js/main.js" defer></script>
+<script src="js/fx.js" defer></script>
 </body>
 </html>
