@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-page="shop">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop Tools | AC Hardware Mauritius</title>
+<meta name="description" content="Browse TOTAL power tools, hand tools, garden, plumbing, electrical, paint and safety gear at AC Hardware. Build a list and call 464 6376 to check stock.">
+<meta property="og:image" content="https://webluxe.github.io/ACHardware-Website/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://webluxe.github.io/ACHardware-Website/shop.html">
+<meta name="theme-color" content="#1b1e21">
+<link rel="icon" type="image/png" href="img/icon-192.png"><link rel="apple-touch-icon" href="img/icon-192.png">
+<script>(function(d){try{if(sessionStorage.getItem('ac-tx'))d.classList.add('tx-wait')}catch(e){}})(document.documentElement)</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Big+Shoulders+Display:wght@800;900&family=Big+Shoulders+Stencil+Display:wght@900&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&family=Big+Shoulders+Display:wght@800;900&family=Big+Shoulders+Stencil+Display:wght@900&display=swap"></noscript>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="tx" aria-hidden="true"><div class="shutter"><div class="plate"></div></div></div>
+<div class="bar" id="bar"></div>
+<header class="top" id="top"></header>
+<nav class="mnav" id="mnav" aria-label="Menu"></nav>
+
+<main>
+  <section class="shophead">
+    <div class="wrap">
+      <div><p class="tag" style="color:var(--yellow)">Shop tools</p><h1 id="ttl">All tools</h1><p class="lead">Add tools to your list, then call the counter to check stock and collect.</p></div>
+      <div class="aisle-no" id="aisleNo" aria-hidden="true"></div>
+    </div>
+  </section>
+  <div class="wrap shop">
+    <nav class="side" aria-label="Aisles"></nav>
+    <div>
+      <div class="catchips" role="group" aria-label="Aisles"></div>
+      <div class="tools">
+        <form class="hsearch" id="searchForm" role="search"><input id="q" type="search" placeholder="Search tools, e.g. grinder" aria-label="Search tools" autocomplete="off"><button aria-label="Search" data-i="search"></button></form>
+        <select id="sort" aria-label="Sort"><option value="pop">Popular first</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+      </div>
+      <h2 class="sr">Tools</h2>
+      <p class="count" id="count" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+      <div class="none" id="none" hidden><b>Not on the website yet.</b><br>We probably still have it. Call <a data-tel style="color:var(--yellow);font-weight:800"><span data-s="phone"></span></a> and ask.</div>
+      <p class="note" data-demo style="margin-top:20px">Example products and prices for this demo. The shop's real list goes in config.js.</p>
+    </div>
+  </div>
+</main>
+<footer id="foot"></footer>
+<script src="config.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
