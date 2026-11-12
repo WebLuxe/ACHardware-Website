@@ -408,3 +408,5 @@ video.bgv { position: absolute; inset: 0; width: 100%; height: 100%; object-fit:
 .tip .lbl, .tip .play, .tip b, .tip span { position: relative; z-index: 1; }
 .tip .lbl, .tip .play { position: absolute; }
 @media (prefers-reduced-motion: reduce) { .hero .bg { transform: none !important; } .aticker .track { animation: none; } }
+
+@media (max-width: 480px) { .bar .hide-xs { display: none; } .bar .wrap span { white-space: nowrap; } .bar { letter-spacing: .05em; } }

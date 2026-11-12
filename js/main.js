@@ -26,7 +26,7 @@
   const page = html.dataset.page;
   const links = [['index.html', 'Home', 'home'], ['shop.html', 'Shop tools', 'shop'], ['visit.html', 'Visit us', 'visit']];
   const logo = `<a class="logo" href="index.html" aria-label="${S.name} home"><span class="badge" aria-hidden="true"></span><span><b>${S.name}</b><small>${S.slogan}</small></span></a>`;
-  $('#bar').innerHTML = `<div class="wrap"><span>Authorised ${S.brand} tools dealer<span class="hide-s"> · Trade & DIY</span></span><span>Call <a href="tel:${S.phoneIntl}">${S.phone}</a></span></div>`;
+  $('#bar').innerHTML = `<div class="wrap"><span><span class="hide-xs">Authorised </span>${S.brand} tools dealer<span class="hide-s"> · Trade & DIY</span></span><span>Call <a href="tel:${S.phoneIntl}">${S.phone}</a></span></div>`;
   $('#top').innerHTML = `<div class="wrap">${logo}
     <form class="hsearch" action="shop.html" role="search"><input name="q" placeholder="Search tools..." aria-label="Search tools" autocomplete="off"><button aria-label="Search">${I.search}</button></form>
     <nav class="nav" aria-label="Main">${links.map(([h, t, k]) => `<a href="${h}"${k === page ? ' aria-current="page"' : ''}>${t}</a>`).join('')}</nav>
